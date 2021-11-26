@@ -5,3 +5,42 @@
 // Generare numeri random al posto degli 0 nelle proprietà:
 // Punti fatti e falli subiti.
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+
+
+// Creo un array di oggetti con le squadre di calcio
+const footballTeamsArray =
+[
+    {
+        nome: 'Ascoli',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: 'Pescara',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: 'Teramo',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+]
+
+
+// Genero numeri random per punti fatti e falli subiti
+let teamScore = getRndInteger(0, 50)
+console.log('Team score: ', teamScore)
+
+let foulsSuffered = getRndInteger(0, 20)
+console.log('Fouls Suffered: ', foulsSuffered)
+
+
+// Creo un nuovo array usando la destrutturazione, e lo popolo solo con i nomi delle squadre e i falli subiti
+
+
+// FUNCTION
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
