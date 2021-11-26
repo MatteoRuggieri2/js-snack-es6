@@ -26,19 +26,58 @@ const footballTeamsArray =
         puntiFatti: 0,
         falliSubiti: 0
     },
-]
+];
 
 
 // Genero numeri random per punti fatti e falli subiti
-let teamScore = getRndInteger(0, 50)
-console.log('Team score: ', teamScore)
+let teamScore;
+let foulsSuffered;
 
-let foulsSuffered = getRndInteger(0, 20)
-console.log('Fouls Suffered: ', foulsSuffered)
+for (let i = 0; i < footballTeamsArray.length; i++) {
+    let team = footballTeamsArray[i];
+
+    // Genero un numero casuale per il punteggio
+    teamScore = getRndInteger(0, 50);
+    console.log('Team score: ', teamScore);
+
+    // Genero un numero casuale per i falli subiti
+    foulsSuffered = getRndInteger(0, 20);
+    console.log('Fouls Suffered: ', foulsSuffered);
+
+    team.puntiFatti = teamScore;
+    team.falliSubiti = foulsSuffered;
+
+    console.log(team.puntiFatti);
+    console.log(team.falliSubiti);
+}
+
+
+
+
+
+
 
 
 // Creo un nuovo array usando la destrutturazione, e lo popolo solo con i nomi delle squadre e i falli subiti
+// const newFootballTeamsArray = [];
+// for (let i = 0; i < footballTeamsArray.length; i++) {
+//     let singleTeam = footballTeamsArray[i];
 
+//     const {nome, falliSubiti} = singleTeam
+
+//     let newTeam = (`
+//     {
+//         nome: ${nome},
+//         falliSubiti: ${falliSubiti}
+//     },
+//     `)
+
+//     newFootballTeamsArray.push(newTeam);
+
+//     console.log(newFootballTeamsArray);
+
+
+// }
 
 // FUNCTION
 function getRndInteger(min, max) {
