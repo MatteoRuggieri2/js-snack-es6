@@ -56,6 +56,12 @@ for (let i = 0; i < footballTeamsArray.length; i++) {
         nome: nome,
         falliSubiti: falliSubiti
     });
+
+    // Si può fare anche con la forma abbreviata
+    // newFootballTeamsArray.push({
+    //     nome,
+    //     falliSubiti
+    // });
     
     console.log('Nuovo array: ', newFootballTeamsArray);
 
