@@ -28,25 +28,24 @@ let lightestBike = bikeArray[0]
 // Lettura e destructuring degli oggetti
 for (let i = 0; i < bikeArray.length; i++) {
     const singleBike = bikeArray[i]
-
     
-    // Destucturing degli oggetti
-    const {nome, peso} = singleBike;
-    
-    // Seleziono il container
-    const container = document.getElementById('container');
-
     // Se il peso della bici è inferiore di quela di default lo sovrascrivo 
     if (singleBike.peso < lightestBike.peso) {
         lightestBike = singleBike
-
-        // Stampo le Bike Features
-        container.innerHTML += `
-            <ul id="bike-fetures-list">
-                <li>Nome: ${lightestBike.nome}</li>
-                <li>Peso: ${lightestBike.peso} kg</li>
-            </ul>
-        `
     }
     
 }
+
+// Seleziono il container
+const container = document.getElementById('container');
+
+// Destucturing degli oggetti
+const {nome, peso} = lightestBike;
+
+// Stampo le Bike Features
+container.innerHTML += `
+<ul id="bike-fetures-list">
+    <li>Nome: ${nome}</li>
+    <li>Peso: ${peso} kg</li>
+</ul>
+`
