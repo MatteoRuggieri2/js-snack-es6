@@ -39,3 +39,13 @@ const students70array = students.filter((element, index, array) => {
     }
 });
 console.log('students70array: ', students70array)
+
+
+
+// Con filter creo un nuovo array dove inserisco gli studenti solo se hanno grades > 70 e id > 120.
+const students70And120Array = students.filter((element, index, array) => {
+    if( element.grades >= 70 && element.id >= 120 ) {
+        return true;
+    }
+});
+console.log('students70And120Array: ', students70And120Array)
