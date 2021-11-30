@@ -18,6 +18,8 @@ const max = 5;
 //     if( index > min && index < max ) {
 //         newNameArray.push(element);
 //     }
+
+    // (index > min && index < max) ? newNameArray.push(element) : null;
 // });
 
 // console.log('newNameArray: ', newNameArray)
@@ -31,6 +33,9 @@ const newNameArray = myArray.filter((element, index, array) => {
     if( index > min && index < max ) {
         return true;
     }
+
+    // Versione abbreviata
+    // return index > min && index < max;
 })
 
 console.log('newNameArray: ', newNameArray)
