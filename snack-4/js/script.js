@@ -37,6 +37,8 @@ const students70array = students.filter((element, index, array) => {
     if( element.grades >= 70 ) {
         return true;
     }
+    // Versione abbreviata
+    // return element.grades >= 70;
 });
 console.log('students70array: ', students70array)
 
@@ -47,5 +49,7 @@ const students70And120Array = students.filter((element, index, array) => {
     if( element.grades >= 70 && element.id >= 120 ) {
         return true;
     }
+    // Versione abbreviata
+    // return element.grades >= 70 && element.id >= 120;
 });
 console.log('students70And120Array: ', students70And120Array)
