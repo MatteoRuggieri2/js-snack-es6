@@ -7,6 +7,7 @@
 
 /* COMMON */
 body{
+    font-family: cursive;
     background-color: rgb(45, 45, 45);
 }
 
@@ -17,13 +18,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* test */
-    background-color: blueviolet;
 }
 
 img{
     width: 100%;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .agenda{
@@ -34,9 +36,17 @@ img{
     background-position: center;
     background-size: contain;
     display: flex;
+}
 
-    /* test */
-    background-color: darkcyan;
+.agenda button{
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.agenda button:hover {
+    background-color: #cccccc;
 }
 
 .left-page{
@@ -47,19 +57,12 @@ img{
     justify-content: center;
     align-items: center;
     position: relative;
-
-    /* test */
-    border: 3px solid black;
 }
 
 .btn-container{
     position: absolute;
     bottom: 5%;
     right: 10%;
-
-
-    /* test */
-    background-color: rgba(0, 0, 205, 0.432);
 }
 
 .right-page{
@@ -67,21 +70,12 @@ img{
     padding: 30px;
     display: flex;
     align-items: center;
-    
-
-    /* test */
-    border: 3px solid black;
 }
 
 .left-text-area {
-
-    /* test */
-    background-color: rgba(0, 128, 0, 0.514);
+    min-height: 50%;
 }
 
 .right-text-area {
-
-
-    /* test */
-    background-color: rgba(0, 128, 0, 0.514);
+    min-height: 40%;
 }
